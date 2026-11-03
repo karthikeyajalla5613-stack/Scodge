@@ -145,8 +145,7 @@ android {
         versionCode = managerVersionCode
         versionName = managerVersionName
         applicationId = managerPackageName
-
-        buildConfigField("boolean", "IS_PR_BUILD", isPrBuild.toString())
+        buildConfigField("boolean", "IS_PR_BUILD", "false")
         resValue("string", "app_name", managerName)
 
         externalNativeBuild {
